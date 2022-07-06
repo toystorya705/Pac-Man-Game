@@ -1,0 +1,692 @@
+
+
+body {/* Main Body background and its image*/
+    background-image: url("../IMG/image1.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar ul {
+    /*  Navigation Bar */
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+
+.navbar ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s ease;
+}
+
+.navbar .logo img {/* Logo Image*/
+    float: left;
+    width: 230px;
+    height: auto;
+    padding-top: 13px;
+}
+
+.navbar .active {
+    background-color: #fff;
+    color: #000;
+}/*  Navigation Bar */
+
+footer {
+    /*Footer*/
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: DarkSalmon;
+    font-size: 20px;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    width: 100%;
+}/*Footer*/
+
+.home {/*Home Page Button till line 153*/
+    /*Positioning and Background*/
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: #031321;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home a {/*Adding color and shadow to button*/
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffee00;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.home a:hover {
+    color: #fff;
+    background: rgb(255, 187, 0);
+    box-shadow: 0 0 10px #ffee00, 0 0 40px #ffee00, 0 0 80px #ffee00;
+    transition-delay: 1s;
+}
+
+.home a span {/*Creating Running Lines*/
+    position: absolute;
+    display: block;
+    border-radius: 5px;
+}
+
+.home a span:nth-child(1) {/*Running Line Top*/
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(255, 166, 0));
+}
+
+.home a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.50s;
+}
+
+.home a span:nth-child(3) {/*Running Line Bottom*/
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(255, 166, 0));
+}
+
+.home a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.50s;
+    transition-delay: 0.5s;
+}
+
+.home a span:nth-child(2) {/*Running Line Right*/
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(255, 166, 0));
+}
+
+.home a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.50s;
+    transition-delay: 0.25s;
+}
+
+.home a span:nth-child(4) {/*Running Line Left*/
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(255, 166, 0));
+}
+
+.home a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.50s;
+    transition-delay: 0.75s;
+}/*Home Page Button*/
+
+.logsinform {
+    /* Login and Create Account Form CSS till line 327 */
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(181, 182, 192, 0.7);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.logsinform img {
+    /*User Logo*/
+    width: 50%;
+    height: 50%;
+}
+
+/*User Logo*/
+
+.logsinform input {
+    /*User Input box*/
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    height: 44px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    border: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}/*User Input box*/
+
+.logsinform button {
+    /* Login and Sign up button*/
+    border: 1px solid #ffe600;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background: none;
+    padding: 5px 35px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 10px;
+    color: #ffe600;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    box-sizing: content-box;
+}/* Login and Sign up button*/
+
+.logsinform a {
+    /* Create Account Link*/
+    text-decoration: none;
+    border: 1px solid #ffe600;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background: none;
+    padding: 10px;
+    box-sizing: content-box;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 10px;
+    color: #ffe600;
+    transition: 0.8s;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}/* Create Account Link*/
+
+.logsinform button:hover, .logsinform a:hover {/*Button Transition till line 249*/
+    color: #fff;
+    border-radius: 10px;
+}
+
+.logsinform button::before, .logsinform a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(255, 166, 0);
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.logsinform button:hover::before, .logsinform a:hover::before {
+    height: 200%;
+}
+
+.logsinform input[type="checkbox"] {
+    /*Checkbox*/
+    padding: 0;
+    margin: 0;
+    height: 13px;
+    width: 13px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline;
+}/*Checkbox*/
+
+.logsinform label {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.messagebox{
+  
+  width: 300px;
+  text-align: center;
+  background: rgba(181, 182, 192, 0.884);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 20px;
+  display: none;
+  color: #000;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+
+  width: 300px;
+  text-align: center;
+  background: rgba(181, 182, 192, 0.884);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 20px;
+  display:none;
+  color: #000;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: rgb(0, 255, 0);
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "\2714";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: rgb(236, 4, 4);
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "\2716";
+}/*Login form and Create Account Form CSS till starting from line 58*/
+
+
+
+ /*play game page till line 537*/
+
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 80px;
+    left: 200px;
+  }
+  
+  #game {
+    position: relative;
+    display: inline-grid;
+    background: black;
+  }
+  
+  .game-status {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: 5px darkblue solid;
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  #score {
+ 
+    transform: translate(-200%, -700%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border: 5px darkblue solid;
+    background: black;
+    left: 10px;
+    margin-top: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+  }
+  
+  #start-button {
+   
+    transform: translate(200%, -500%);
+    border-radius: 5px;
+    background: #031321;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    padding: 15px 30px;
+    color: #ffee00;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5px;
+  }
+
+  
+
+  #start-button:hover {
+    color: #fff;
+    background: rgb(255, 187, 0);
+    box-shadow: 0 0 10px #ffee00, 0 0 40px #ffee00, 0 0 80px #ffee00;
+    
+}
+
+
+  
+  .hide {
+    display: none;
+    
+  }
+  
+  .square {
+    display: block;
+  }
+  
+  .blank {
+    background: black;
+  }
+  
+  .wall {
+    box-sizing: border-box;
+    border: 1px solid rgb(157, 255, 0);
+   
+  }
+  
+  .dot {
+    box-sizing: border-box;
+    background: white;
+    border: 8px solid black;
+    border-radius: 50%;
+  }
+  
+  .pill {
+    box-sizing: border-box;
+    background: white;
+    border: 5px solid black;
+    border-radius: 50%;
+  }
+  
+  .ghost {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px 10px 2px 2px;
+    border: none;
+  }
+  
+  .ghost::before {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: black;
+    border-radius: 50%;
+    left: 3px;
+    top: 5px;
+    border: 2px solid white;
+  }
+  
+  .ghost::after {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: black;
+    border-radius: 50%;
+    right: 3px;
+    top: 5px;
+    border: 2px solid white;
+  }
+  
+  .scared {
+    background: blue !important;
+  }
+  
+  .blinky {
+    background: red;
+  }
+  
+  .pinky {
+    background: pink;
+  }
+  
+  .inky {
+    background: cyan;
+  }
+  
+  .clyde {
+    background: orange;
+  }
+  
+  .pacman {
+    box-sizing: border-box;
+    background: yellow;
+    border: none;
+    border-radius: 50%;
+    clip-path: polygon(
+      0 0,
+      20px 0,
+      20px -5px,
+      8px 10px,
+      20px 25px,
+      20px 20px,
+      0 20px
+    );
+    animation: chew 0.2s linear forwards infinite;
+  }
+  
+  @keyframes chew {
+    50% {
+      clip-path: polygon(
+        0 0,
+        20px 0,
+        20px 10px,
+        8px 10px,
+        20px 10px,
+        20px 20px,
+        0 20px
+      );
+    }
+  }
+
+
+
+
+/*play game page*/
+
+
+.ranking {/*Rankimg page till line 596*/
+
+    width: 1200px;
+    padding: 50px;
+    background: rgba(181, 182, 192, 0.7);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    height: 350px;
+    padding-top: 100px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.rankingheading {/*ranking Heading*/
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 55px;
+    transform: translate(-50%, -50%);
+    font-family: 'Sigmar One', cursive;
+    color: rgb(255, 251, 0);
+    font-weight: 500;
+    text-shadow: 0 0 40px rgb(255, 145, 0), 0 0 40px rgb(255, 123, 0),0 0 40px rgb(255, 102, 0),0 0 40px rgb(255, 153, 0);
+}
+
+.ranking table {
+    border-collapse: collapse;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    min-width: 1200px;
+    font-size: 2em;
+    font-weight: bold;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgb(255, 153, 0);
+    border-radius: 10px;
+}
+
+.ranking table thead tr {
+    background-color: rgb(255, 166, 0);
+    color: rgb(255, 251, 0);
+    text-align: left;
+}
+
+.ranking table th, .ranking table td {
+    padding: 12px 15px;
+}
+
+.ranking table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.ranking table tbody tr:nth-last-of-type(even) {/*Color Bar*/
+    background-color: #f3f3f39f;
+}
+
+.ranking table tbody tr:last-of-type {/*Bottom Bar*/
+    border-bottom: 2px solid rgb(255, 166, 0);
+}/*Ranking Page*/
+
+.abouthead {/*About Page till line 643*/
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 55px;
+    transform: translate(-50%, -50%);
+    font-family: 'Sigmar One', cursive;
+    color:  rgb(255, 251, 0);
+    font-weight: 500;
+    text-shadow: 0 0 40px rgb(255, 145, 0), 0 0 40px rgb(255, 123, 0),0 0 40px rgb(255, 102, 0),0 0 40px rgb(255, 153, 0);
+}
+
+.about {
+    /*Background*/
+    background: rgba(125, 126, 134, 0.904);
+    position: relative;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+
+.about img {
+    height: 200px;
+    width: 170px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 50px;
+}
+
+.about p {/*Paragraph*/
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 251, 0);
+    width: 1100px;
+    height: 180px;
+    text-align: left;
+    padding: 80px;
+    padding-top: 170px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 80px rgb(255, 115, 0), 0 0 60px #fff;
+}/*About Page*/
+
+.contactus label {/*Contact Us page till line 692*/
+    /*Contactus page*/
+    font-family: 'Sigmar One', cursive;
+    color: rgb(255, 251, 0);
+    font-weight: 500;
+    text-shadow: 0 0 40px rgb(255, 145, 0), 0 0 40px rgb(255, 123, 0),0 0 40px rgb(255, 102, 0),0 0 40px rgb(255, 153, 0);/*Shadow*/
+    width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 380px;
+    font-size: 50px;
+    text-align: center;
+    background: rgba(181, 182, 192, 0.7);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.contactus p {/*Paragraph*/
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    position: absolute;
+    font-size: 45px;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 40px rgb(255, 251, 0),0 0 40px #fff ;
+    
+  
+   
+}
+
+.contactus .para1 {
+
+display: inline;
+    top: 35%;
+    left: 50%;
+    
+}
+
+.contactus .para2 {
+    top: 55%;
+    left: 48%;
+}
+
+.contactus .para3 {
+    top: 75%;
+    left: 47%;
+}/*Contactus page*/
