@@ -31,7 +31,7 @@ function outputNavigation($pageName)//Navigation Function
 
     //Array of pages to link to
     $linkNames = array("Home", "Play Game", "Ranking", "Contact Us", "About", "Login/Sign up");
-    $linkAddresses = array("index.php", "PlayGame.php", "Ranking.php", "contactUs.php", "About.php", "Login.php");
+    $linkAddresses = array("index.php", "PlayGame.php", "Ranking.php", "ContactUs.php", "About.php", "Login.php");
     echo '<ul>';
     //Output navigation bar
     for ($x = 0; $x < count($linkNames); $x++) {//For Loop for active class 
